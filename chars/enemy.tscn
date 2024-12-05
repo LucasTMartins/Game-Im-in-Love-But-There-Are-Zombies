@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://8ygg1xuvngb8"]
+
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_qnw4e"]
+[ext_resource type="Texture2D" uid="uid://bttunxyonbr8a" path="res://assets/kenney_top-down-shooter/PNG/Zombie 1/zoimbie1_hold.png" id="2_21foo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mwuos"]
+size = Vector2(20, 42)
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_qnw4e")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_mwuos")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_21foo")
+
+[node name="AreaAttack" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaAttack"]
