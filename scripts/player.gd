@@ -11,9 +11,14 @@ var vida: int = 3
 @onready var bullet = preload("res://scenes/bullet.tscn")
 const BULLET_INACCURATE = 10
 
+func _ready():
+	add_to_group("player")
+
 # Funções
 func  _process(_delta):
 	look_at(get_global_mouse_position())
+	if vida <= 0:
+		get_tree().reload_current_scene.call_deferred()
 
 func _physics_process(_delta):
 	walk()
@@ -38,3 +43,7 @@ func bullet_fire():
 	bullet_instance.direction.x += randf_range(-BULLET_INACCURATE, BULLET_INACCURATE)
 	bullet_instance.direction.y += randf_range(-BULLET_INACCURATE, BULLET_INACCURATE)
 	get_tree().get_root().add_child(bullet_instance)
+
+func atualiza_vida(dano):
+	vida -= dano
+	print(vida)

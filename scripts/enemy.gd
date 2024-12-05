@@ -24,3 +24,7 @@ func _physics_process(_delta):
 
 func atualiza_vida(dano):
 	vida -= dano
+
+func _on_area_attack_body_entered(body):
+	if body.is_in_group("player"):
+		body.atualiza_vida(1)
