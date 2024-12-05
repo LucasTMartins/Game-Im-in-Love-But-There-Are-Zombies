@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=4 uid="uid://c3yomxyib817r"]
+[gd_scene load_steps=11 format=4 uid="uid://c3yomxyib817r"]
 
 [ext_resource type="PackedScene" uid="uid://botovm4y4jrrf" path="res://chars/player.tscn" id="1_8fvw4"]
 [ext_resource type="Texture2D" uid="uid://bnetn50gok1p4" path="res://assets/kenney_top-down-shooter/Tilesheet/tilesheet_complete.png" id="2_2gr2p"]
 [ext_resource type="PackedScene" uid="uid://8ygg1xuvngb8" path="res://chars/enemy.tscn" id="3_t81w5"]
+[ext_resource type="PackedScene" uid="uid://c72qobfjgxeb5" path="res://chars/woman.tscn" id="4_vxcti"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g43r0"]
 resource_name = "Terrain"
@@ -2794,3 +2795,6 @@ position = Vector2(495, -125)
 
 [node name="Enemy10" parent="." instance=ExtResource("3_t81w5")]
 position = Vector2(617, 665)
+
+[node name="woman" parent="." instance=ExtResource("4_vxcti")]
+position = Vector2(420, 430)

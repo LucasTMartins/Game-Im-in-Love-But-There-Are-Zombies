@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c72qobfjgxeb5"]
+
+[ext_resource type="Script" path="res://scripts/woman.gd" id="1_7mlwr"]
+[ext_resource type="Texture2D" uid="uid://duuwl5iwi5mwk" path="res://assets/kenney_top-down-shooter/womanGreen_stand.png" id="2_ye6tm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gunbf"]
+size = Vector2(25, 43)
+
+[node name="woman" type="CharacterBody2D"]
+script = ExtResource("1_7mlwr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.5, -0.5)
+shape = SubResource("RectangleShape2D_gunbf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(8, 0)
+texture = ExtResource("2_ye6tm")

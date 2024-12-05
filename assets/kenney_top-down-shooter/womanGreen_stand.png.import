@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://duuwl5iwi5mwk"
-path="res://.godot/imported/womanGreen_stand.png-05d3bec9481f7bf7fd890d47c0c46442.ctex"
+path="res://.godot/imported/womanGreen_stand.png-bceb941845698c863864bd7726be54aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenney_top-down-shooter/PNG/Woman Green/womanGreen_stand.png"
-dest_files=["res://.godot/imported/womanGreen_stand.png-05d3bec9481f7bf7fd890d47c0c46442.ctex"]
+source_file="res://assets/kenney_top-down-shooter/womanGreen_stand.png"
+dest_files=["res://.godot/imported/womanGreen_stand.png-bceb941845698c863864bd7726be54aa.ctex"]
 
 [params]
 

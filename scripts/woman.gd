@@ -1,7 +1,7 @@
 extends CharacterBody2D
  
 #@onready var player = get_node("/root/MainScene/Player")
-var speed: float = 230
+var speed: float = 270
 var player: Node2D
 var direction = Vector2.ZERO
 var vida: int = 3
